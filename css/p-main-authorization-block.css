@@ -1,0 +1,29 @@
+.p-remember-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    
+}
+
+@media all and (max-width: 60rem) {
+    .p-remember-container {
+        flex-direction: column;
+    }
+    .p-remember-container span, .p-remember-container label {
+margin: .3rem;
+    }
+}
+@media all and (max-width: 55rem) {
+    .p-register-buttons-variant {
+        flex-direction: column;
+        align-items: center;
+    }
+    .p-register-buttons-variant a {
+        width: 70%;
+        margin: .3rem;
+    }
+    form input.p-button,
+    form button.p-submit {
+        width: 70%;
+    }
+}

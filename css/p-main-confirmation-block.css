@@ -1,0 +1,26 @@
+.confirmation-block p, span {
+    color: #000;
+}
+.confirmation-block span {
+    font-weight: bold;
+    letter-spacing: 0;
+}
+.p-button.p-submit {
+    margin: 1rem 0;
+}
+
+@media all and (max-width: 42rem) {
+    .p-button.p-submit {
+        width: 75%;
+    }
+}
+@media all and (max-width: 30rem) {
+    .p-button.p-submit {
+        width: 90%;
+    }
+}
+@media all and (max-width: 20rem) {
+    .p-button.p-submit {
+        width: 98%;
+    }
+}

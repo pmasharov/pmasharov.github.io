@@ -1,0 +1,45 @@
+.p-change-role-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.p-user-role {
+    position: relative;
+    padding-bottom: 0.7rem;
+    border-bottom: solid 1px #D8D8D8;
+}
+.p-user-role a {
+    border: none;
+}
+.p-user-role span {
+    font-size: 1rem;
+    color: #9b9b9b;
+    cursor: pointer;
+}
+.p-user-role:nth-child(2) {
+    width: 1.5rem;
+}
+.p-active-role {
+    border-width: 5px;
+}
+.p-active-role span {
+    color: #404040;
+}
+
+@media all and (max-width: 55rem) {
+    .p-register-buttons-variant {
+        flex-direction: column;
+        align-items: center;
+    }
+    .p-register-buttons-variant a {
+        width: 70%;
+        margin: .3rem;
+    }
+    form#pupil-registration-form input.p-button {
+        width: 70%;
+    }
+    form#pupil-registration-form button.p-submit {
+        width: 73%;
+    }
+}

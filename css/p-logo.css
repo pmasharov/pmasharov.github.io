@@ -1,0 +1,10 @@
+.p-logo {
+    width: 20%;
+    padding: 0.5rem;
+    display: flex;
+
+}
+
+.p-logo img:last-child {
+    padding-left: 10px;
+}

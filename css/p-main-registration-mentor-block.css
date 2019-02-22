@@ -1,0 +1,138 @@
+p.p-info-block-title {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #51ae5a;
+    text-align: left;
+}
+div.p-subjects-block {
+    display: flex;
+    width: 100%;
+}
+div.p-subjects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33%;
+}
+.p-subjects-block label {
+    display: block;
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+
+form#mentor-registration-form .p-info-container .p-button {
+    background: none;
+    width: 100%;
+}
+.p-info-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.p-info-container {
+    width: 48%;
+}
+
+form#mentor-registration-form textarea {
+    width: 100%;
+    height: 5rem;
+    resize: none;
+    text-align: left;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.p-photo-container {
+    position: relative;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: flex-end;
+    /* align-items: flex-start; */
+    width: 100%;
+    height: 10rem;
+    border: dotted 1px #51ae5a;
+    border-radius: 20px;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.p-photo-container .p-button {
+    border: none;
+    background: #51ae5a;
+    color: #fff;
+}
+
+input.p-mentor-photo  {
+    visibility: hidden;
+}
+
+.p-mentor-photo-preview {
+    top: 0;
+    left: 0;
+    max-width: 50%;
+    max-height: 90%;
+}
+
+.p-photo-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.p-photo-control .p-button {
+    width: 50%;
+}
+div.p-clear-photo.p-button {
+    color: #4a4a4a;
+    background: #D8D8D8;
+}
+.thumb {
+    max-width: 15rem;
+    max-height: 10rem;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+}
+
+div.p-photo-control p {
+    margin: 0.3rem;
+}
+div.p-photo-control p.p-photo-loaded-info-text {
+    color: #51ae5a;
+}
+
+@media all and (max-width: 55rem) {
+    div.p-subjects-block {
+        flex-direction: column;
+        width: 100%;
+    }
+    div.p-subjects-container {
+        width: 100%;
+    }
+}
+@media all and (max-width: 40rem) {
+    div.p-info-block {
+        flex-direction: column;
+    }
+    div.p-info-container {
+        width: 100%;
+    }
+    form#mentor-registration-form input[type=text].p-button,
+    form#mentor-registration-form button.p-button {
+        width: 100%;
+    }
+    .p-photo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    div.p-photo-control {
+        width: 100%;
+        align-items: center;
+    }
+    div.p-photo-control div.p-button {
+        width: 75%;
+    }
+}

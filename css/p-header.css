@@ -1,0 +1,12 @@
+.p-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+
+.p-header .white-button {
+    min-width: 5rem;
+}

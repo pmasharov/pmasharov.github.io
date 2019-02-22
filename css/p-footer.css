@@ -1,0 +1,25 @@
+.p-footer {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 1rem 0;
+}
+.p-footer a {
+    margin: 0 1rem;
+    text-decoration: underline;
+}
+.p-footer span, .p-footer a {
+    border: none;
+}
+
+@media all and (max-width: 600px) {
+    .p-footer {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        justify-content: start;
+    }
+    .p-footer a, .p-footer span {
+        margin: 0.5rem 0 ;
+    }
+}

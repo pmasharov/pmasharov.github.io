@@ -1,0 +1,75 @@
+form#pupil-end-registration-form .p-change-pupil-role-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 2.2rem;
+    display: flex;
+    justify-content: space-around;
+    border: solid 1px #D8D8D8;
+    padding: 0.1rem;
+    background: #D8D8D8;
+}
+
+form#pupil-end-registration-form .p-change-pupil-role-radio {
+    position: absolute;
+    visibility: hidden;
+}
+
+div.p-role-marker {
+    width: 50%;
+    height: 1.9rem;
+    line-height: 1.3rem;
+    color: #4a4a4a;
+    background: #D8D8D8;
+}
+div.p-role-marker-active {
+    background:#74AB60;
+    color: #fff;
+    transition: all .2s ease-out;
+}
+
+div.p-email-container {
+    width: 50%;
+    background: #454545;
+    color: white;
+    height: 2.2rem;
+    border-color: #454545;
+    cursor: initial;
+}
+
+@media all and (max-width: 55rem) {
+    form#pupil-end-registration-form .p-change-pupil-role-block,
+    form#pupil-end-registration-form div.p-email-container {
+        width: 100%;
+    }
+    form#pupil-end-registration-form select {
+        width: 100%;
+    }
+    form#pupil-end-registration-form input.p-button {
+        width: 100%;
+
+    }
+    form#pupil-end-registration-form button.p-submit {
+        width: 100%;
+
+    }
+}
+@media all and (max-width: 55rem) {
+    form#pupil-end-registration-form .p-change-pupil-role-block {
+        width: 100%;
+    }
+    form#pupil-end-registration-form div.p-email-container {
+        width: 100%;
+    }
+    form#pupil-end-registration-form select {
+        width: 100%;
+    }
+    form#pupil-end-registration-form input.p-button {
+        width: 100%;
+        
+    }
+    form#pupil-end-registration-form button.p-submit {
+        width: 100%;
+    }
+}

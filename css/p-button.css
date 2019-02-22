@@ -1,0 +1,42 @@
+.p-button {
+    width: 20%;
+    height: 2.2rem;
+    border: none;
+    border-radius: 20px;
+    color: #4a4a4a;
+    background: #fff;
+    line-height: 1.5rem;
+    padding: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: -1px;
+    box-sizing: border-box;
+}
+.vk-button {
+    background:#4C77A6;
+    color: #fff;
+}
+.fb-button {
+    background: #4469B0;
+    color: #fff;
+}
+.gl-button {
+    background:#D9453D;
+    color: #fff;
+}
+.ok-button {
+    background:#F59231;
+    color: #fff;
+}
+.white-button {
+    background:#fff;
+    width: 10%;
+}
+.p-submit {
+    background: #f5df49;
+    line-height: 1rem;
+    width: 50%;
+    height: 2.2rem;
+    margin: 1rem 0 0;
+    border: none;
+}
