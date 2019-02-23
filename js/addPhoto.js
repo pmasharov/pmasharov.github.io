@@ -1,4 +1,5 @@
 function addPhoto() {
+  debugger
     let addPhotoInputElem = document.querySelector('.p-mentor-photo')
     addPhotoInputElem.addEventListener('change', handleFileSelect, false);
     addPhotoInputElem.click();
@@ -37,6 +38,7 @@ function handleFileSelect(evt) {
     }
     
     function clearPhoto () {
+      debugger
         //clear file input value
         document.getElementById('files').value = "";
         //clear photo preview
