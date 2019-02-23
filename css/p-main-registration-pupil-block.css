@@ -36,10 +36,8 @@
         width: 70%;
         margin: .3rem;
     }
+    form#pupil-registration-form button.p-submit,
     form#pupil-registration-form input.p-button {
         width: 70%;
-    }
-    form#pupil-registration-form button.p-submit {
-        width: 73%;
     }
 }

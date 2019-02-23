@@ -120,8 +120,9 @@ div.p-photo-control p.p-photo-loaded-info-text {
     div.p-info-container {
         width: 100%;
     }
-    form#mentor-registration-form input[type=text].p-button,
-    form#mentor-registration-form button.p-button {
+    form input[type=text].p-button,
+    form input[type=password].p-button,
+    form button.p-button {
         width: 100%;
     }
     .p-photo-container {
@@ -131,8 +132,5 @@ div.p-photo-control p.p-photo-loaded-info-text {
     div.p-photo-control {
         width: 100%;
         align-items: center;
-    }
-    div.p-photo-control div.p-button {
-        width: 75%;
     }
 }
