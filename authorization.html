@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tetrika | Authorization</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="/css/p-main.css">
+    <link rel="stylesheet" href="/css/p-main-authorization-block.css">
+    <link rel="stylesheet" href="/css/p-header.css">
+    <link rel="stylesheet" href="/css/p-logo.css">
+    <link rel="stylesheet" href="/css/p-button.css">
+    <link rel="stylesheet" href="/css/p-backgroundWrapper.css">
+    <link rel="stylesheet" href="/css/p-footer.css">
+</head>
+
+<body>
+    <div class="p-background-wrapper">
+        <header class="p-header">
+            <div class="p-logo">
+                <img src="/layout/img/logo.svg" title="Tetrika" alt="logo">
+                <img src="/layout/img/tetrika.svg" title="Tetrika" alt="tetrika-text">
+            </div>
+            <a class="p-button white-button" href="registration-pupil.html">Регистрация</a>
+        </header>
+        <main class="p-main-block registration-block">
+            <div class="fix">
+                <h1>Вход</h1>
+                <div class="p-register-buttons-variant">
+                    <a class="p-button vk-button" href="">ВКонтакте</a>
+                    <a class="p-button fb-button" href="">Facebook</a>
+                    <a class="p-button gl-button" href="">Google</a>
+                    <a class="p-button ok-button" href="">Одноклассники</a>
+                </div>
+                <div class="p-or-separator">
+                    <div class="p-or-separator-line"></div>
+                    <p class="p-or">или</p>
+                    <div class="p-or-separator-line"></div>
+                </div>
+                <form action="/api/auth" method="POST" id="authorization-form">
+                    <input name="email" class="p-button" type="email" placeholder="Email" required>
+                    <input name="password" class="p-button" type="password" placeholder="Пароль" required>
+                    <div class="p-remember-container">
+                        <!-- TODO ссылка на востановление пароля -->
+                        <span><a href="">Забыли пароль?</a></span>
+                    </div>
+                    <button class="p-button p-submit" type="submit">Войти</button>
+                </form>
+
+            </div>
+        </main>
+        <footer class="p-footer">
+            <span class="p-link">&copy; Tetrika 2018</span>
+            <a href="">
+                Соглашение о конфиденциальности
+            </a>
+            <a href="">
+                Вопрос-ответ
+            </a>
+            <a href="">
+                Контакты
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
