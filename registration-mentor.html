@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/p-footer.css">
     <script src="/js/addPhoto.js"></script>
     <script src="/js/confirmPass.js"></script>
+    <script src="/js/subjectsValidate.js"></script>
 </head>
 
 <body>
@@ -49,29 +50,41 @@
                     <p class="p-info-block-title">Преподаваемые предметы</p>
                     <div class="p-subjects-block">
                         <div class="p-subjects-container">
-                            <label for="phys"><input checked type="checkbox" id="phys" name="phys">
+                            <p class="p-subjectsValidErrorText p-pass-valid-err-text p-none">Выберите минимум один из предметов
+                            </p>
+                            <label for="phys"><input onchange="subjectsValidate()" class="p-subject" type="checkbox"
+                                    id="phys" name="phys">
                                 Физика</label>
-                            <label for="rus"><input type="checkbox" id="rus" name="rus">
+                            <label for="rus"><input onchange="subjectsValidate()" class="p-subject" type="checkbox"
+                                    id="rus" name="rus">
                                 Русский язык</label>
-                            <label for="bio"><input type="checkbox" id="bio" name="bio">
+                            <label for="bio"><input onchange="subjectsValidate()" class="p-subject" type="checkbox"
+                                    id="bio" name="bio">
                                 Биология</label>
-                            <label for="hist"><input type="checkbox" id="hist" name="hist">
+                            <label for="hist"><input onchange="subjectsValidate()" class="p-subject" type="checkbox"
+                                    id="hist" name="hist">
                                 История</label>
                         </div>
                         <div class="p-subjects-container">
-                            <label for="math"><input type="checkbox" id="math" name="math">
+                            <label for="math"><input onchange="subjectsValidate()" class="p-subject" type="checkbox"
+                                    id="math" name="math">
                                 Математика</label>
-                            <label for="lit"><input type="checkbox" id="lit" name="lit">
+                            <label for="lit"><input onchange="subjectsValidate()" class="p-subject" type="checkbox"
+                                    id="lit" name="lit">
                                 Литература</label>
-                            <label for="chem"><input type="checkbox" id="chem" name="chem">
+                            <label for="chem"><input onchange="subjectsValidate()" class="p-subject" type="checkbox"
+                                    id="chem" name="chem">
                                 Химия</label>
-                            <label for="soc"><input type="checkbox" id="soc" name="soc">
+                            <label for="soc"><input onchange="subjectsValidate()" class="p-subject" type="checkbox"
+                                    id="soc" name="soc">
                                 Обществознание</label>
                         </div>
                         <div class="p-subjects-container">
-                            <label for="it"><input type="checkbox" id="it" name="it">
+                            <label for="it"><input onchange="subjectsValidate()" class="p-subject" type="checkbox"
+                                    id="it" name="it">
                                 Информатика</label>
-                            <label for="eng"><input type="checkbox" id="eng" name="eng">
+                            <label for="eng"><input onchange="subjectsValidate()" class="p-subject" type="checkbox"
+                                    id="eng" name="eng">
                                 Английский язык</label>
                         </div>
                     </div>
@@ -84,11 +97,12 @@
                         </div>
                         <div class="p-info-container">
                             <input name="old" class="p-button" type="number" placeholder="Возраст" required min="16">
-                            <input name="employment_term" class="p-button" type="number" placeholder="Стаж преподавания (в годах):"
-                                required min="0">
+                            <input name="employment_term" class="p-button" type="number"
+                                placeholder="Стаж преподавания (в годах):" required min="0">
                         </div>
                     </div>
-                    <textarea name="about" resize="none" class="p-button" type="text" placeholder="*О себе" required></textarea>
+                    <textarea name="about" resize="none" class="p-button" type="text" placeholder="*О себе"
+                        required></textarea>
 
                     <p class="p-info-block-title">Загрузите фотографию</p>
                     <div class="p-photo-container">
@@ -97,23 +111,25 @@
                             <img class="p-cloud-img" src="/layout/img/cloud.svg" alt="">
                             <button onclick="addPhoto()" class="p-add-photo p-button">
                                 Обзор
-                                <input id="photo" name="avatar" accept="image/*" required class="p-mentor-photo" type="file">
+                                <input id="photo" name="avatar" accept="image/*" class="p-mentor-photo"
+                                    type="file">
                             </button>
                             <p class="p-photo-loaded-info-text p-none">Файл загружен</p>
                             <p class="p-photo-info p-none"></p>
-                            <button onclick="clearPhoto()" class="p-clear-photo p-button p-none">
+                            <button  class="p-clear-photo p-button p-none">
                                 Удалить
                             </button>
                         </div>
                     </div>
 
                     <p class="p-info-block-title">Придумайте пароль</p>
-                    <input name="password" id="password" class="p-password p-button" type="password" required pattern="[0-9a-fA-Fa-zA-Z]{6,30}"
-                        placeholder="Пароль">
+                    <input name="password" id="password" class="p-password p-button" type="password" required
+                        pattern="[0-9a-fA-Fa-zA-Z]{6,30}" placeholder="Пароль">
                     <p class="p-pass-valid-err-text p-none">Пароли не совпадают</p>
-                    <input name="confirm_password" id="confirm_password" class="p-confirm_password p-button" required pattern="[0-9a-fA-Fa-zA-Z]{6,30}"
-                        type="password" onchange="confirmPass(this)" placeholder="Повторить пароль">
-                    <button class="p-button p-submit" type="submit" form="mentor-registration-form">Зарегистрироваться</button>
+                    <input name="confirm_password" id="confirm_password" class="p-confirm_password p-button" required
+                        pattern="[0-9a-fA-Fa-zA-Z]{6,30}" type="password" onchange="confirmPass(this)"
+                        placeholder="Повторить пароль">
+                    <button  onmouseover="subjectsValidate()" class="p-button p-submit" >Зарегистрироваться</button>
                 </form>
                 <p>
                     Регистрируясь, вы соглашаетесь с правилами пользования сайтом

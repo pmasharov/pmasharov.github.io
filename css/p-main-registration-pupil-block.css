@@ -4,6 +4,10 @@
     justify-content: center;
     padding: 1rem 0;
 }
+.p-change-role-block a {
+    font-size: 1.2rem;
+
+}
 .p-user-role {
     position: relative;
     padding-bottom: 0.7rem;
@@ -13,12 +17,12 @@
     border: none;
 }
 .p-user-role span {
-    font-size: 1rem;
+    font-size: 1.2rem !important;
     color: #9b9b9b;
     cursor: pointer;
 }
 .p-user-role:nth-child(2) {
-    width: 1.5rem;
+    width: 3rem;
 }
 .p-active-role {
     border-width: 5px;
