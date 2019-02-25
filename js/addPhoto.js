@@ -34,13 +34,13 @@ function handleFileSelect(evt) {
       document.querySelector('.p-photo-info').classList.toggle('p-none')
       document.querySelector('.p-photo-loaded-info-text').classList.toggle('p-none')
       document.querySelector('.p-photo-container').style.border = 'none';
-      document.querySelector('.p-photo-info').innerHTML = document.getElementById('files').value;
+      document.querySelector('.p-photo-info').innerHTML = document.getElementById('photo').value;
     }
     
     function clearPhoto () {
       debugger
         //clear file input value
-        document.getElementById('files').value = "";
+        document.getElementById('photo').value = "";
         //clear photo preview
         document.querySelector('.thumb').remove();
         

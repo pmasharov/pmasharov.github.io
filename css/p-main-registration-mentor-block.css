@@ -46,12 +46,10 @@ form#mentor-registration-form textarea {
 .p-photo-container {
     position: relative;
     display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     align-items: flex-end;
-    /* align-items: flex-start; */
     width: 100%;
-    height: 10rem;
+    min-height: 10rem;
     border: dotted 1px #51ae5a;
     border-radius: 20px;
     padding: .5rem;
